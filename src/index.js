@@ -8,7 +8,7 @@ import * as serviceWorker from './serviceWorker';
 
 const element = <h1>pozdrav svete</h1>;
 
-ReactDOM.render(element, document.querySelector("#root"));
+ReactDOM.render(element, document.getElementById('root'));
 console.log(element);
 
 serviceWorker.register();
