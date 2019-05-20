@@ -1,0 +1,19 @@
+nav {
+	background: $mainGreen;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	background: linear-gradient(to bottom, $darkGreen 0%, $mainGreen 100%);
+	padding: 16px;
+	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.3) !important;
+	overflow: visible;
+
+	ul {
+		list-style: none;
+
+		li {
+			display: inline;
+			padding: 0 5px;
+		}
+	}
+}
