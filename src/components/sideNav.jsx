@@ -132,11 +132,12 @@ class SideNav extends Component {
 
 	renderNav(current) {
 		const links = this.state.links;
+		//console.log(links)
 		for (let i = 0; i < links.length; i++) {
 			if (links[i][0] === current) {
+				//console.log(links[i][1])
 				var currentLinks = links[i];
-				// let url = currentLinks[1].map(url => url);
-				// let item = currentLinks[2].map(item => item);
+				//console.log(currentLinks[2])
 				let items = currentLinks[2].map(item => <li key={ item }> {item} </li>)
 				return items;
 			}
