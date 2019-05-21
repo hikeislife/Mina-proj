@@ -3,12 +3,13 @@ import { getMenu } from '../data/menu';
 
 class SideNav extends Component {
 	state = {
-		current: this.props.id,
-		links: getMenu("hc")
+		//current: this.props.id,
+		current: "js",
 		};
 
 	renderSideMenu(current) {
-		var menu = this.state.links.map(item => <a href={ item.urls } key={ item._id }><li key={item._id}>{ item.items }</li></a>)
+		let links = getMenu(this.state.current);
+		var menu = links.map(item => <a href={ item.urls } key={ item._id }><li key={item._id}>{ item.items }</li></a>)
 		return menu;
 	};
 
@@ -17,8 +18,6 @@ class SideNav extends Component {
 			<ul>
 				{ this.renderSideMenu(this.state.current) }
 			</ul>
-			{ console.log("Selection: ", this.state.current) }
-
 		</div> )
 	};
 }

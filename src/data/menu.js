@@ -340,6 +340,6 @@ export const menuItems = [
 ]
 
 export function getMenu(section) {
-	console.log(section)
+	//console.log(section)
 	return menuItems.filter(m => m.sec === section);
 }

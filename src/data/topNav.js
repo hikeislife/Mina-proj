@@ -22,5 +22,5 @@ export const items = [
 ];
 
 export function getTopNav() {
-	return items.filter(m => m.id !== "mp");
+	return items.filter(m => m._id !== "mp");
 }
