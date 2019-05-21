@@ -100,13 +100,13 @@ export const menuItems = [
 	{
 		_id: "hc1",
 		sec: "hc",
-		items: "Softver",
+		items: "Uvod u HTML",
 		urls: "#uvod_u_HTML_i_CSS",
 	},
 	{
 		_id: "hc2",
 		sec: "hc",
-		items: "Uvod",
+		items: "Osnovna strukura HTML-a",
 		urls: "#struktura_HTML_stranice",
 	},
 	{
@@ -340,7 +340,6 @@ export const menuItems = [
 ]
 
 export function getMenu(section) {
-	//console.log(menuItems.filter(m => m.sec === section))
 	console.log(section)
 	return menuItems.filter(m => m.sec === section);
 }

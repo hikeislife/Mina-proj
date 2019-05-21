@@ -3,6 +3,7 @@
 @import "sideNav";
 @import "footer";
 @import "logo";
+@import "main";
 
 body {
   margin: 0;
@@ -13,6 +14,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   display: grid;
   grid-template-columns: 250px, 1fr;
+}
+
+.placeholder {
+  grid-column: 2/3;
 }
 
 code {

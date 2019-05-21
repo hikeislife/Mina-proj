@@ -10,13 +10,13 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        {/*<img src={logo} className="App-logo" alt="logo" />*/}
         <TopNav />
       </header>
       <aside>
         <SideNav />
       </aside>
-      <main>
+      <main className="placeholder">
         <Container />
       </main>
       <Footer />
