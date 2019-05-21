@@ -3,7 +3,7 @@ import { getMenu } from '../data/menu';
 
 class SideNav extends Component {
 	state = {
-		current: "mp",
+		current: this.props.id,
 		links: getMenu("hc")
 		};
 
@@ -17,6 +17,7 @@ class SideNav extends Component {
 			<ul>
 				{ this.renderSideMenu(this.state.current) }
 			</ul>
+			{ console.log("Selection: ", this.state.current) }
 
 		</div> )
 	};

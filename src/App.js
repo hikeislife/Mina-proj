@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import TopNav from './components/topNav';
 import './SCSS/App.scss';
 import SideNav from './components/sideNav';
