@@ -9,7 +9,8 @@ import Footer from './components/footer';
 class App extends Component {
   state = {
     currentSection: "mp",
-    currentPage: "test",
+    currentPage: "mp",
+    content: "main content goes here",
   };
 
   handleTopNavClick = (selected) => {
@@ -24,17 +25,21 @@ class App extends Component {
       allNavs[i].classList.remove("active");
     }
     document.querySelector(`#${selected}`).classList.add("active");
-
-    // re-render sidenav:
-   // renderSideMenu(selected);
   };
 
-  // renderSideMenu(current) {
-  //   console.log(current)
-  //   let links = getMenu(current);
-  //   var menu = links.map(item => <a href={ item.urls } key={ item._id }><li key={item._id}>{ item.items }</li></a>)
-  //   return menu;
-  // };
+  handleSideNavClick = (item) => {
+    const currentPage = item;
+    this.setState({
+      currentPage
+    });
+
+    //set active class to clicked element of top nav
+    const allNavs = document.querySelectorAll(".sideNav ul li");
+    for (let i = 0; i < allNavs.length; i++) {
+      allNavs[i].classList.remove("active");
+    }
+    document.querySelector(`#${item.substring(1)}`).classList.add("active");
+  }
 
   render() {
   return (
@@ -44,10 +49,10 @@ class App extends Component {
         <TopNav onClick={this.handleTopNavClick} />
       </header>
       <aside>
-        <SideNav currentSection={this.state.currentSection} />
+        <SideNav currentSection={this.state.currentSection} onClick={this.handleSideNavClick} />
       </aside>
       <main className="placeholder">
-        <Container />
+        <Container currentPage={this.state.currentPage} />
       </main>
       <Footer />
     </div>
