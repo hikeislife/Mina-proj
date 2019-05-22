@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { getMenu } from '../data/menu';
-import TopNav from './topNav';
+//import TopNav from './topNav';
 
 class SideNav extends Component {
 	// state = {

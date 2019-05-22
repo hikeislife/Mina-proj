@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import SideNav from './sideNav';
+//import SideNav from './sideNav';
 import { getTopNav } from '../data/topNav';
 
 class TopNav extends Component {
