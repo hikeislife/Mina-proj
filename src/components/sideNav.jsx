@@ -22,7 +22,7 @@ class SideNav extends Component {
 
 		return ( <div className="sideNav" >
 			<ul>
-				{ this.renderSideMenu("mp") }
+				{ this.renderSideMenu(this.props.currentSection) }
 			</ul>
 		</div> )
 	};
