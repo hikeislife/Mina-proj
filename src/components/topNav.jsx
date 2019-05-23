@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { getTopNav } from '../data/topNav';
+//import { textAreaSizer } from '../helpers';
 
 class TopNav extends Component {
 	state = {
@@ -7,6 +8,10 @@ class TopNav extends Component {
 		selection: "mp",
 		activeIndex: 0,
 	};
+
+	componentDidUpdate() {
+		//textAreaSizer();
+	}
 
 	render() {
 		return ( <nav>

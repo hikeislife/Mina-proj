@@ -5,6 +5,8 @@ import './SCSS/App.scss';
 import SideNav from './components/sideNav';
 import Container from './components/container';
 import Footer from './components/footer';
+//import { textAreaSizer } from './helpers';
+
 
 class App extends Component {
   state = {
