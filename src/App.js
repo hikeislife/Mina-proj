@@ -15,8 +15,20 @@ class App extends Component {
 
   handleTopNavClick = (selected) => {
     const currentSection = selected;
+    let currentPage;
+    console.log(currentSection);
+    if (currentSection === "js") {
+      currentPage = "#uvod_u_js";
+      console.log(currentPage);
+    }
+    else if (currentSection === "hc") {
+      currentPage = "#uvod_u_HTML_i_CSS";
+    }
+    else if (currentSection === "gc") {
+      currentPage = "#uvod_u_cmd";
+    }
     this.setState({
-      currentSection
+      currentSection, currentPage
     });
 
     //set active class to clicked element of top nav
@@ -46,7 +58,7 @@ class App extends Component {
     <div className="App">
       <header className="App-header">
         {/*<img src={logo} className="App-logo" alt="logo" />*/}
-        <TopNav onClick={this.handleTopNavClick} />
+        <TopNav onClick={this.handleTopNavClick} currentSection={this.state.currentSection} currentPage={this.state.currentPage} />
       </header>
       <aside>
         <SideNav currentSection={this.state.currentSection} onClick={this.handleSideNavClick} />

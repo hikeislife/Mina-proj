@@ -79,3 +79,33 @@
 .depr {
  border-color: $warningRed;
 }
+
+code {
+ margin-right: 20px;
+ position: relative;
+ background-image: url("../imgs/dot.png");
+ border-radius: 4px;
+ width: auto;
+ margin: 20px 0;
+ padding: 10px;
+ padding-bottom: 0;
+ border: 2px solid #bbb;
+ display:block;
+ word-wrap: all;
+ z-index: 0;
+}
+
+textarea {
+ background: transparent;
+ font-size: 16px;
+ width: 100%;
+ height: auto;
+ overflow: visible;
+ resize: none;
+ border: 0 none;
+ outline: none;
+ word-break: break-word;
+ display: block;
+ font-weight: bold;
+ z-index: 0;
+}
