@@ -5,11 +5,6 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import "font-awesome/css/font-awesome.css";
 
-//ReactDOM.render(<App />, document.getElementById('root'));
-
-//const element = <h1>pozdrav svete</h1>;
-
 ReactDOM.render(<App />, document.getElementById('root'));
-// console.log(element);
 
 serviceWorker.register();

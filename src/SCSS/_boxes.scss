@@ -1,0 +1,81 @@
+.superbox {
+ border: 2px solid black;
+ border-radius: 4px;
+ margin: 20px 0;
+ padding: 10px;
+ color: $darkFont;
+}
+.superbox p {
+  color: $darkFont;
+}
+.why {
+  background-color: $darkYellow;
+}
+.why::before {
+  content: 'Zašto ovo radimo? ';
+  font-weight: bolder;
+}
+.sol {
+ background-image: url("../imgs/dot.png");
+ font-weight: bold;
+}
+.kviz {
+ background-color: $quizYellow!important;
+
+ &::before {
+ 	font-family: "FontAwesome";
+ 	content: "\f059";
+ 	padding: 0 5px;
+ 	color: $darkFont;
+ 	font-weight: 900;
+ }
+}
+
+.error {
+ background-color: $darkYellow!important;
+
+ &::before {
+ 	font-family: "FontAwesome";
+ 	content: "\f188";
+ 	padding: 0 5px;
+ 	color: $darkFont;
+ 	font-weight: 900;
+ }
+}
+
+.tip {
+ background-color: $darkGreen!important;
+ /*color: $quizYellow;*/
+ font-weight: bold;
+
+ &::before {
+ 	font-family: "FontAwesome";
+ 	content: "\f005";
+ 	padding: 0 5px;
+ 	color: $darkFont;
+ 	font-weight: 900;
+ }
+
+ a {
+ 	background-color: $warningRed;
+ }
+ b {
+ 	color: $quizYellow;
+ }
+}
+
+.warning {
+ background-color: $warningRed!important;
+
+ &::before {
+ font-family: "FontAwesome";
+ content: "\f06a";
+ padding: 0 5px;
+ color: $darkFont;
+ font-weight: 900;
+}
+}
+
+.depr {
+ border-color: $warningRed;
+}

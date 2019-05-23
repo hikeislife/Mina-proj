@@ -11,5 +11,108 @@ main {
 	display: grid;
 	margin: 8px;
 	text-align: justify;
-	padding: 10px 100px;
+	padding: 20px 200px;
+}
+
+h1 {
+ text-align: center;
+ margin: 18px 0;
+ font-size: 36px;
+ }
+h2 {
+ text-align: center;
+ font-size: 30px;
+ margin: 10px 0;
+}
+h3 {
+ margin: 20px 0;
+}
+
+em {
+  border: 1px solid black;
+  border-radius: 3px;
+  font-style: normal;
+  background-color: #ddd;
+  padding: 0 5px;
+  white-space: nowrap;
+}
+a, a:visited {
+ text-decoration: none;
+ background-color: var(--mg);
+ color: black;
+}
+a.nocolor {
+  background-color: transparent;
+}
+hr {
+ border-style: solid;
+ border-color: #ffc600;
+ margin: 20px 0;
+}
+
+main ul li {
+ text-align: justify;
+ padding: 5px;
+}
+ul.gap_li li {
+ padding: 7px;
+}
+details {
+ position: relative;
+}
+.inl {
+  display: inline;
+}
+summary {
+ outline: none;
+ padding: 20px 0;
+}
+summary::-webkit-details-marker, summary::-moz-details-marker {
+ float: left;
+ position: relative;
+ /*display: none;*/
+ color: var(--dg);
+}
+h2.inl{
+  text-align: center;
+}
+
+blockquote {
+ font-weight: bold;
+ position: relative;
+ padding: 20px;
+ padding-bottom: 40px;
+ border: 2px solid black;
+ border-radius: 4px;
+ background-color: var(--lg);
+}
+blockquote cite {
+ display: block;
+ right: 30px;
+ position: absolute;
+ bottom: 10px;
+}
+blockquote cite::before {
+  content:"~ ";
+  font-size: 30px;
+  color: var(--dg);
+}
+blockquote::before {
+ content: "\201c";
+ font-size: 30px;
+ color: var(--dg);
+}
+blockquote::after {
+ content: "\201d";
+ font-size: 30px;
+ color: var(--dg);
+}
+.highlight {
+ background-color: var(--lg);
+}
+.listless {
+  list-style-type: none;
+}
+.links {
+  display: none;
 }
