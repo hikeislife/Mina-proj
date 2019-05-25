@@ -18,10 +18,10 @@ class App extends Component {
   handleTopNavClick = (selected) => {
     const currentSection = selected;
     let currentPage;
-    console.log(currentSection);
+    //console.log(currentSection);
     if (currentSection === "js") {
       currentPage = "#uvod_u_js";
-      console.log(currentPage);
+      //console.log(currentPage);
     }
     else if (currentSection === "hc") {
       currentPage = "#uvod_u_HTML_i_CSS";
