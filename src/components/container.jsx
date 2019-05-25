@@ -14,10 +14,9 @@ class Container extends Component {
 
 	textAreaSizer = () => {
 	 const text = document.querySelectorAll(`.code_snippet`);
-	 console.log(text.length);
 	 for (let i = 0; i < text.length; i ++) {
-	  //let scroll = text[i].scrollHeight;
 	  text[i].style.height = text[i].scrollHeight + 'px';
+	  text[i].style.width = `100%`;
 	 }
 	}
 
@@ -28,8 +27,6 @@ class Container extends Component {
 	componentDidUpdate() {
 		this.textAreaSizer();
 	}
-
-
 
 	render() {
 		return ( <section dangerouslySetInnerHTML={{__html: this.renderContent(this.props.currentPage) }} /> )
