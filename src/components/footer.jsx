@@ -4,7 +4,7 @@ class Footer extends Component {
 	state = {}
 	render() {
 		return ( <footer>
-			ČĎŠ
+			&copy; ČĎŠ 2019
 		</footer> )
 	}
 }

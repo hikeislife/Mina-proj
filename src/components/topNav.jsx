@@ -31,7 +31,8 @@ class TopNav extends Component {
 						id={t._id} 
 						onClick={() => this.props.onClick(t._id) }
 						//className={t._id === selectedItem ? "active" : ""} >
-						selectedItem={this.props.selectedTopNav} > 
+						//selectedItem={this.props.selectedTopNav} 
+						> 
 						{ t.content } 
 					</li> 
 					) }
