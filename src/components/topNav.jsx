@@ -4,23 +4,34 @@ import { getTopNav } from '../data/topNav';
 
 class TopNav extends Component {
 	state = {
-		mainNav: getTopNav(),
+		mainNav: [],
 		selection: "mp",
 		activeIndex: 0,
 	};
+
+	componentDidMount() {
+		this.setState({
+			mainNav: getTopNav() 
+		});
+	}
 
 	componentDidUpdate() {
 		//textAreaSizer();
 	}
 
 	render() {
+		const topNavProps = props => {
+			const { onClick, selectedItem } = props;
+		}
 		return ( <nav>
 			<ul>
 				{ this.state.mainNav.map(t => 
 					<li 
 						key={t._id} 
 						id={t._id} 
-						onClick={() => this.props.onClick(t._id) } > 
+						onClick={() => this.props.onClick(t._id) }
+						//className={t._id === selectedItem ? "active" : ""} >
+						selectedItem={this.props.selectedTopNav} > 
 						{ t.content } 
 					</li> 
 					) }

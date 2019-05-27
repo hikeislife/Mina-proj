@@ -30,7 +30,9 @@ class App extends Component {
       currentPage = "#uvod_u_cmd";
     }
     this.setState({
-      currentSection, currentPage
+      currentSection, 
+      currentPage, 
+      selectedTopNav: selected,
     });
 
     //set active class to clicked element of top nav
