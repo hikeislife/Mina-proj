@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-//import logo from './logo.svg';
+import logo from './logo.svg';
 import TopNav from './components/topNav';
 import './SCSS/App.scss';
 import SideNav from './components/sideNav';
@@ -61,7 +61,7 @@ class App extends Component {
   return (
     <div className="App">
       <header className="App-header">
-        {/*<img src={logo} className="App-logo" alt="logo" />*/}
+        {<img src={logo} className="App-logo" alt="logo" />}
         <TopNav onClick={this.handleTopNavClick} currentSection={this.state.currentSection} currentPage={this.state.currentPage} />
       </header>
       <aside>
